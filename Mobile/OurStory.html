@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Our Story </title>
+<link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/wolfwedding.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+		var end = new Date(2017, 7, 8, 16, 30, 0, 0);
+		
+		var _second = 1000;
+		var _minute = _second * 60;
+		var _hour = _minute * 60;
+		var _day = _hour * 24;
+		var timer;
+		
+		function showRemaining(){
+			var now = new Date();
+			var distance = end - now;
+			if(distance < 0){
+				clearInterval(timer);
+				return;			
+			}
+			var days = Math.floor(distance / _day);
+			var hours = Math.floor((distance%_day) / _hour);
+			var minutes = Math.floor((distance%_hour) / _minute);
+			var seconds = Math.floor((distance%_minute) / _second);
+			document.getElementById('days').innerHTML = days + '<br /> days';
+			document.getElementById('hours').innerHTML = hours + '<br /> hours';
+			document.getElementById('mins').innerHTML = minutes + '<br /> minutes';
+			document.getElementById('seconds').innerHTML = seconds + '<br /> seconds';
+		}
+		timer = setInterval(showRemaining, 1000);
+	</script>
+<style type="text/css">
+body {
+    background: url(img/Collage1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+	img { height:300px; width:300px;
+		border-radius:150px;
+		border:5px solid white;
+ }
+
+</style>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1 style=" font-family: 'Great Vibes', Helvetica, sans-serif;"> Our Story </h1>
+		<a href="#mypanel" data-iconpos="notext" data-role="button" data-icon="bars" class="ui-btn-right"></a>
+		</div>
+	
+		<div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+					<li><a href='index.html' style='font-size:20px;font-family:"Great Vibes", Helvetica, sans-serif'>Dustin & <br /> Allison</a></li>
+		<li><a data-ajax="false" href='OurStory.html'><b>ABOUT</b> <br /> <span style="font-size:10px">OUR HISTORY</span></a></li>
+		<li><a data-ajax="false" href='photos.html'>GALLERY <br /> <span style="font-size:10px">OUR PICTURES</span></a></li>
+		<li><a data-ajax="false" href='ceremony_information.html'>CEREMONY <br /> <span style="font-size:10px">ALL INFO</span></a></li>
+		<li><a data-ajax="false" href='WeddingParty.html'>WEDDING PARTY</a></li>
+		<li><a data-ajax="false" href='rsvp.html'>RSVP<br /><span style="font-size:10px">Online form</span></a></li>
+		<li><a data-ajax="false" href="Registry.html">REGISTRY<br /><span style="font-size:10px">Official</span></a></li>
+		<li><a data-ajax="false" href='ContactUs.html'>CONTACT US <br /> <span style="font-size:10px">Email and Phone</span></a></li>
+			</ul>
+		</div>
+	
+<div id='container' style="background-color:rgba(128, 128, 128, .8); border:1px solid #808080;  width:90%; margin:0 auto; margin-top:50px">
+	<table width='100%' cellspacing='10' cellpadding='10' style="margin:0 auto;color:white;text-align:center;text-shadow:1px 1px #000; font-family: 'Great Vibes', Helvetica, sans-serif;">
+	<tr>
+		<td> <img src='img/ourstory.png' /></td>
+	</tr>
+<tr>
+		<td style='font-family:Arial'>
+While attending IPFW, Dustin and Allison met because of his department secretary who also happened to be the mother of one of Allison's best friends. Lisa Davenport (the secretary/mom) worked her magic and convinced Allison and Dustin (after much resistance) to find each other on Facebook. After Dustin accepted the friend request in February, 2012, Lisa continued to question him if the two had talked. Finally after he finished classes for the day, Dustin sent a message to Allison asking about herself and her connection to Lisa. The two chatted for a while on Facebook and the rest is history...
+</td>
+	</tr>
+	<tr>
+		<td> <img src='img/latest.png' /></td>
+	</tr>
+	<tr>
+		<td style="font-size:30pt"> Our Engagement </td>
+	</tr>
+	<tr>
+		<td style='font-family:arial'>
+			
+On May 4th, 2015 Allison was having a stress-filled day. Dustin had come out to her place in Virginia to help her work on her Thesis proposal. After Allison had gone to campus and successfully proposed her thesis, the two went out to celebrate. Little did she know there was going to be more to celebrate than her thesis! Allison picked the Cheesecake Factory so that she could get her favorite glam burger (the one with fried macaroni and cheese on top-how romantic). After a waiter change mid-meal, the two both enjoyed their large and unhealthy meal. After dinner was over, Dustin attempted to get Allison to walk around the mall, but she was not having it. She was wearing shoes that were too tight and was running on left over adrenaline from the thesis proposal. All-in-all she was ready to go home and go to bed. Dustin was not about to let that happen. His plan to keep her in the mall failed miserably and they ended up walking out to her car to go back to her place. 
+<br /><br />
+Instead of starting the car and heading back, he asked her 4 simple questions. 
+<ol style="list-style-type:none"><li>Do you remember our first kiss? How nervous I was?</li>
+<li>Do you remember when I asked you to be my girlfriend? How nervous I was?</li></ol> <br />
+
+She looked at him with a weird look as if her face was saying " What the hell are you talking about". And then he said " Well I have another one of those types of questions.... Will you marry me?". Then with as much grace as possible, he reached into his side pocket of his khaki shorts and tried to grab the ring. He normally does not button them, but today he made an exception because of the ring. How embarassing was it to not get the ring out! 
+<br /><br />
+However, with all of the fumbling about, messed up plans, and shoes that were too tight.... She said YES!
+</td>
+</tr>
+
+</table>	
+	
+</div>
+</div>
+</body>
+</html>

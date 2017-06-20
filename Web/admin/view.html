@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body {
+		background-color:#222;			
+	}
+	table{
+		background-color:#fff;
+	}
+	</style>
+	<script src="../js/view_mobile.js"></script>
+</head>
+<body>
+<div ng-app="weddingview" ng-controller="weddingCtrl" >
+<table class="table table-bordered">
+<tr><th>First Name</th><th>Last Name</th><th>Attending</th><th> # of Guest</th></tr>
+<tr ng-repeat="x in names">
+<td scope="row">{{x.first_name}}</td>
+<td>{{x.last_name}}</td>
+<td>{{x.attending}}</td>
+<td>{{x.actual_num}}</td>
+</tr>
+</table>
+</div>
+<script>
+        var app = angular.module('weddingview', []);
+
+        app.controller('weddingCtrl', function($scope, $http){
+                $http.post("../php/get_rsvp.php").success(function(data){
+                        $scope.names = data;
+		});
+        });
+</script>
+</body>
+</html>

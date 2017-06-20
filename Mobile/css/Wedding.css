@@ -1,0 +1,45 @@
+body{
+	background-image:url('../img/Collage1.png');
+	background-size:100%;
+}
+#container{
+	border:1px solid #808080;
+	width:90%;
+	margin:0 auto;
+	margin-top: 5%;
+	height:450px;
+	background-color:rgba(128, 128, 128, .8)
+}
+#container_nonmain{
+	border:1px solid #808080;
+	width:90%;
+	margin:0 auto;
+	margin-top: 5%;
+	background-color:rgba(128, 128, 128, .8)
+
+}
+.nav {
+	 list-style-type:none;
+	margin:0;
+	padding:0;
+}	
+.nav ul{
+ background-color:#808080;
+ text-align:center;
+position:relative;
+top:-17px;
+}
+.nav li{
+	font-weight:normal;
+	font-size:1em;
+	display:inline;
+	}
+
+.nav a {
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;    
+  text-decoration: none;
+  color: #fff;
+  display:inline-block;
+  transition: .3s background-color;
+  width: 10%;
+}

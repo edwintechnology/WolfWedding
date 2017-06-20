@@ -1,0 +1,25 @@
+<?php
+$header = "From: noreply@edwintech.xyz\r\n"; 
+$header.= "MIME-Version: 1.0\r\n"; 
+$header.= "Content-Type: text/html; charset=utf-8\r\n"; 
+$header.= "X-Priority: 1\r\n";
+
+$first_name = $_POST["first_name"];
+$last_name = $_POST["last_name"];
+$email = $_POST["email"];
+$phone = $_POST["phone"];
+$addr = $_POST["addr"];
+$attending = $_POST["attending"];
+$num_of_guests = $_POST["num_of_guest"];
+$menu = $_POST["menu"];
+
+$subject = 'Name: ' . $first_name . ' ' . $last_name . ' RSVP';
+$message = $first_name . ' ' . $last_name;
+$message.= '<br />' . $email;
+$message.= '<br />' . $phone;
+
+
+mail("allison.and.dustin@gmail.com", $subject, $message, $header);
+#mail($email, "Wolf Wedding RSVP", "Thank you for your RSVP");
+
+?>

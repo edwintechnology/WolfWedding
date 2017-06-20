@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Wedding Party </title>
+<link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/wolfwedding.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+		var end = new Date(2017, 7, 8, 16, 30, 0, 0);
+		
+		var _second = 1000;
+		var _minute = _second * 60;
+		var _hour = _minute * 60;
+		var _day = _hour * 24;
+		var timer;
+		
+		function showRemaining(){
+			var now = new Date();
+			var distance = end - now;
+			if(distance < 0){
+				clearInterval(timer);
+				return;			
+			}
+			var days = Math.floor(distance / _day);
+			var hours = Math.floor((distance%_day) / _hour);
+			var minutes = Math.floor((distance%_hour) / _minute);
+			var seconds = Math.floor((distance%_minute) / _second);
+			document.getElementById('days').innerHTML = days + '<br /> days';
+			document.getElementById('hours').innerHTML = hours + '<br /> hours';
+			document.getElementById('mins').innerHTML = minutes + '<br /> minutes';
+			document.getElementById('seconds').innerHTML = seconds + '<br /> seconds';
+		}
+		timer = setInterval(showRemaining, 1000);
+	</script>
+<style type="text/css">
+body {
+    background: url(img/Collage1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+	img { height:300px; width:300px;
+		border-radius:150px;
+		border:5px solid white;
+ }
+h1{
+  font-family: 'Great Vibes', Helvetica, sans-serif;
+font-size:40px;
+  color: #fff;
+	//text-shadow:2px 2px #222;
+}
+h2 {
+  font-family: 'Great Vibes', Helvetica, sans-serif;
+font-size:32px;
+  color: #fff; 
+}
+h3{
+ font-family: 'Great Vibes', Helvetica, sans-serif;
+font-size:24px;
+  color: #fff; 
+}
+
+</style>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1 style=" font-family: 'Great Vibes', Helvetica, sans-serif;"> Wedding Party </h1>
+		<a href="#mypanel" data-iconpos="notext" data-role="button" data-icon="bars" class="ui-btn-right"></a>
+		</div>
+	
+		<div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+					<li><a href='index.html' style='font-size:20px;font-family:"Great Vibes", Helvetica, sans-serif'>Dustin & <br /> Allison</a></li>
+		<li><a data-ajax="false" href='OurStory.html'><b>ABOUT</b> <br /> <span style="font-size:10px">OUR HISTORY</span></a></li>
+		<li><a data-ajax="false" href='photos.html'>GALLERY <br /> <span style="font-size:10px">OUR PICTURES</span></a></li>
+		<li><a data-ajax="false" href='ceremony_information.html'>CEREMONY <br /> <span style="font-size:10px">ALL INFO</span></a></li>
+		<li><a data-ajax="false" href='WeddingParty.html'>WEDDING PARTY</a></li>
+		<li><a data-ajax="false" href='rsvp.html'>RSVP<br /><span style="font-size:10px">Online form</span></a></li>
+		<li><a data-ajax="false" href="Registry.html">REGISTRY<br /><span style="font-size:10px">Official</span></a></li>
+		<li><a data-ajax="false" href='ContactUs.html'>CONTACT US <br /> <span style="font-size:10px">Email and Phone</span></a></li>
+			</ul>
+		</div>
+<div id='container' style="background-color:rgba(128, 128, 128, .8); border:1px solid #808080;  width:90%; margin:0 auto; margin-top:50px">
+<table width='100%' cellspacing='10' cellpadding='10' style="margin:0 auto;color:white;text-shadow:1px 1px #000;">
+	
+	<td>
+<h2> His Side </h2>
+<div style='margin-left:40px'>
+<h3>Best Man</h3>
+
+<b>James R. Marshall </b> - 
+	Robby is an interesting character that Dustin met while he was studying at Purdue.  Dustin and Robby will do anything for each other.
+	If Dustin was stranded and needed help, Dustin would call Robby.  He would drop what he was doing (if he wasn't half way across the US driving his truck) and come help me out.
+	It wouldnt matter if he was an hour or so away, he would make it work.  Can't buy that kind of friendship.  Robby and Dustin also completed the spartan Trifecta together, as well as play multiple different games together online.
+	Even though Dustin moved away early in everyone's lives, Robby still made an effort to be there.
+	And they have seen each other naked. Obviously BFFs. 
+	Cannot wait to hear what he has to say for his best man speech.
+<h3>Groomsmen</h3>
+
+<b>Brandon Wolf</b> - Identical Twin. He has always been there for Dustin no matter what.  They played in a band together, they play video games together and also like the same kind of movies (superheroes).  This is unusual of brothers.  Brothers usually drift apart, but not these two. Never. 
+<br /><br />
+<b>Matthew Hile</b> - Matt is another college buddy, who has ran spartan races, played beer pong, and played FIFA and landed a place in Dustin's heart. Recently Dustin was in Matt's wedding to his lovely wife Amy who also deserves some credit in this long lasting friendship. 
+<br /><br />
+<b>William A. Parsons</b> - If you are ever feeling down and need someone to talk to? Parsons is always there.  Not just for Dustin, but everyone of his friends has reached out to Parsons at least once in their lives.  That is probably why Parsons has been in everyone's wedding and the best man in a couple of those!  Dustin holds Alex in high regard as do the rest of his friends. 
+Alex and Dustin went to purdue together, ran the spartan races together, and talk biased football with each other.  Dustin is happy that Alex is apart of the team. Also, it's Party Parsons!
+<br /><br />
+<b>Logan Westfall</b> - Dustin's younger, but taller brother.  They may not share the last name, but they are still super close.  Dustin says Logan is the only one who can keep up with him in sports, on the court or on the video games.  Whenever Logan needs anything, he turns to Dustin and if Dustin ever needed Logan for anything, he knows Logan will be there.
+<br /><br />
+</div>
+<h2>Her side</h2>
+<div style='margin-left:40px'>
+
+<h3>Maids of Honor</h3>
+
+<b>Julianna Campbell</b> - Julie and the bride have been friends since third grade and have seen ups, downs, and some of the United States together on their spring break adventures. After spending high school apart, the two reconnected in college and have been close ever since! 
+<br /><br />
+<b>Molly Chalk</b> - Molly met the bride when she came to Queen of Angels at the beginning of fifth grade and have been inseparable ever since. The two attended high school together where their circle of friends grew and changed, but the two never stopped being close, even after Molly went away to IUPUI and Allison went to GMU.
+<h3>Bridesmaids</h3>
+
+<b>Rachel Davenport</b> - Rachel also went to high school with the bride, they met through band. After a couple of years of band camp and drumline, the two became close after realizing that they were very similar! These Booskis are always in sync. As a side note, Rachel is Lisa's daughter, the secretary/friend's mom who helped bring Dustin and Allison together! 
+<br /><br />
+<b>Sara Safford</b> - Sara is the bride's cousin. Although Sara has not been a part of the family for very long, the two became fast friends over hair dye and geekery. Sara is Allison's only choice for taking care of her hair and her complaints, as one normally does while under a hair dryer, but she is also a good friend and a good baker/cook and can make a salted caramel sauce that can melt your heart!
+<br /><br />
+<b>Arielle Baker</b> - Arielle is Allison's oldest niece!  Although only related by marriage, Allison has seen Arielle grow up and become the amazing lady she is today!  Arielle is an important (and awesome) part of Allison's crazy large family and Allison wouldn't have it any other way.
+</div>
+<h2>Officiant</h2>
+<div style='margin-left:40px'>
+
+<b>Thomas Wolf</b> - Uncle of the Groom, Also works with Dustin in the side business "Wolf 'n Kilt". Guess what he is wearing to the wedding.  With all joking aside, Thom and Dustin were inseparable for a while before Allison met Dustin.  Thom was always there to help Dustin out during time a time where he felt nothing else mattered.
+Thom helped Dustin recover with wisdom, alcohol and a lot of crazy good music.  The Bride and Groom contemplated on Thom's involvement in the wedding, and the position of Officiant was proposed.  It seemed obvious at the time, and they are happy he agreed to do it.
+ 
+</div>	
+<td>
+	</table> 
+
+</div>
+
+</body>
+</html>

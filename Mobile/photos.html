@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Our Photos </title>
+<link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/wolfwedding.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+		var end = new Date(2017, 7, 8, 16, 30, 0, 0);
+		
+		var _second = 1000;
+		var _minute = _second * 60;
+		var _hour = _minute * 60;
+		var _day = _hour * 24;
+		var timer;
+		
+		function showRemaining(){
+			var now = new Date();
+			var distance = end - now;
+			if(distance < 0){
+				clearInterval(timer);
+				return;			
+			}
+			var days = Math.floor(distance / _day);
+			var hours = Math.floor((distance%_day) / _hour);
+			var minutes = Math.floor((distance%_hour) / _minute);
+			var seconds = Math.floor((distance%_minute) / _second);
+			document.getElementById('days').innerHTML = days + '<br /> days';
+			document.getElementById('hours').innerHTML = hours + '<br /> hours';
+			document.getElementById('mins').innerHTML = minutes + '<br /> minutes';
+			document.getElementById('seconds').innerHTML = seconds + '<br /> seconds';
+		}
+		timer = setInterval(showRemaining, 1000);
+	</script>
+<style type="text/css">
+body {
+    background: url(img/Collage1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+	img {   width:100%;
+	 }
+
+</style>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1 style=" font-family: 'Great Vibes', Helvetica, sans-serif;"> Our Photos </h1>
+		<a href="#mypanel" data-iconpos="notext" data-role="button" data-icon="bars" class="ui-btn-right"></a>
+		</div>
+	
+		<div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+					<li><a href='index.html' style='font-size:20px;font-family:"Great Vibes", Helvetica, sans-serif'>Dustin & <br /> Allison</a></li>
+		<li><a data-ajax="false" href='OurStory.html'><b>ABOUT</b> <br /> <span style="font-size:10px">OUR HISTORY</span></a></li>
+		<li><a data-ajax="false" href='photos.html'>GALLERY <br /> <span style="font-size:10px">OUR PICTURES</span></a></li>
+		<li><a data-ajax="false" href='ceremony_information.html'>CEREMONY <br /> <span style="font-size:10px">ALL INFO</span></a></li>
+		<li><a data-ajax="false" href='WeddingParty.html'>WEDDING PARTY</a></li>
+		<li><a data-ajax="false" href='rsvp.html'>RSVP<br /><span style="font-size:10px">Online form</span></a></li>
+		<li><a data-ajax="false" href="Registry.html">REGISTRY<br /><span style="font-size:10px">Official</span></a></li>
+		<li><a data-ajax="false" href='ContactUs.html'>CONTACT US <br /> <span style="font-size:10px">Email and Phone</span></a></li>
+			</ul>
+		</div>
+<div id='container' style="background-color:rgba(128, 128, 128, .8); border:1px solid #808080;  width:90%; margin:0 auto; margin-top:50px">
+	
+	<table width='100%' cellspacing='10' cellpadding='10' style="margin:0 auto;color:white;text-align:center;text-shadow:1px 1px #000; text-align:center; font-family: 'Great Vibes', Helvetica, sans-serif;">
+	<tr>	
+		<td>
+			<span style='font-size:20pt'>Photos Courtesy of<br/>
+
+			<a href=""><img src="/img/indlogo.jpg" style="width:25%"/>
+		 </td></tr>
+	<tr><td style="text-align:center;">
+<img src="/img/highlights/allysondustin.jpg">
+<img src="/img/highlights/allysondustin-83.jpg">
+<img src="/img/highlights/allysondustin-3.jpg">
+<img src="/img/highlights/allysondustin-6.jpg">
+<img src="/img/highlights/allysondustin-10.jpg">
+<img src="/img/highlights/allysondustin-12.jpg">
+<img src="/img/highlights/allysondustin-14.jpg">
+<img src="/img/highlights/allysondustin-16.jpg">
+<img src="/img/highlights/allysondustin-17.jpg">
+<img src="/img/highlights/allysondustin-21.jpg">
+<img src="/img/highlights/allysondustin-22.jpg">
+<img src="/img/highlights/allysondustin-23.jpg">
+<img src="/img/highlights/allysondustin-31.jpg">
+<img src="/img/highlights/allysondustin-32.jpg">
+<img src="/img/highlights/allysondustin-34.jpg">
+<img src="/img/highlights/allysondustin-37.jpg">
+<img src="/img/highlights/allysondustin-39.jpg">
+<img src="/img/highlights/allysondustin-40.jpg">
+<img src="/img/highlights/allysondustin-44.jpg">
+<img src="/img/highlights/allysondustin-47.jpg">
+<img src="/img/highlights/allysondustin-49.jpg">
+<img src="/img/highlights/allysondustin-51.jpg">
+<img src="/img/highlights/allysondustin-53.jpg">
+<img src="/img/highlights/allysondustin-66.jpg">
+<img src="/img/highlights/allysondustin-71.jpg">
+<img src="/img/highlights/allysondustin-78.jpg">
+<img src="/img/highlights/allysondustin-81.jpg">
+
+
+	</td></tr>
+	</table>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Thank You </title>
+<link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/themes/wolfwedding.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+		var end = new Date(2017, 7, 8, 16, 30, 0, 0);
+		
+		var _second = 1000;
+		var _minute = _second * 60;
+		var _hour = _minute * 60;
+		var _day = _hour * 24;
+		var timer;
+		
+		function showRemaining(){
+			var now = new Date();
+			var distance = end - now;
+			if(distance < 0){
+				clearInterval(timer);
+				return;			
+			}
+			var days = Math.floor(distance / _day);
+			var hours = Math.floor((distance%_day) / _hour);
+			var minutes = Math.floor((distance%_hour) / _minute);
+			var seconds = Math.floor((distance%_minute) / _second);
+			document.getElementById('days').innerHTML = days + '<br /> days';
+			document.getElementById('hours').innerHTML = hours + '<br /> hours';
+			document.getElementById('mins').innerHTML = minutes + '<br /> minutes';
+			document.getElementById('seconds').innerHTML = seconds + '<br /> seconds';
+		}
+		timer = setInterval(showRemaining, 1000);
+	</script>
+<style type="text/css">
+body {
+    background: url(img/Collage1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+	img { height:300px; width:300px;
+		border-radius:150px;
+		border:5px solid white;
+ }
+
+</style>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1 style=" font-family: 'Great Vibes', Helvetica, sans-serif;"> Thanks! </h1>
+	
+			<a href="#mypanel" data-iconpos="notext" data-role="button" data-icon="bars" class="ui-btn-right"></a>
+		</div>
+	
+		<div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+			<ul data-role="listview">
+					<li><a href='index.html' style='font-size:20px;font-family:"Great Vibes", Helvetica, sans-serif'>Dustin & <br /> Allison</a></li>
+		<li><a data-ajax="false" href='OurStory.html'><b>ABOUT</b> <br /> <span style="font-size:10px">OUR HISTORY</span></a></li>
+		<li><a data-ajax="false" href='photos.html'>GALLERY <br /> <span style="font-size:10px">OUR PICTURES</span></a></li>
+		<li><a data-ajax="false" href='ceremony_information.html'>CEREMONY <br /> <span style="font-size:10px">ALL INFO</span></a></li>
+		<li><a data-ajax="false" href='WeddingParty.html'>WEDDING PARTY</a></li>
+		<li><a data-ajax="false" href='rsvp.html'>RSVP<br /><span style="font-size:10px">Online form</span></a></li>
+		<li><a data-ajax="false" href="Registry.html">REGISTRY<br /><span style="font-size:10px">Official</span></a></li>
+		<li><a data-ajax="false" href='ContactUs.html'>CONTACT US <br /> <span style="font-size:10px">Email and Phone</span></a></li>
+			</ul>
+		</div>
+	<div data-role="content">
+		<div id='container' style="background-color:rgba(128, 128, 128, .8); border:1px solid #808080;  width:90%; margin:0 auto; margin-top:50px; color:#fff; padding:20px; text-shadow: -2px 0px #222; text-align:center">
+		<span style="font-size:36pt; text-align:center;font-family: 'Great Vibes', Helvetica, sans-serif;">
+		Thank you for RSVP'ing!
+		</span>
+</div>
+	</div>	
+	
+</div>
+
+</body>
+</html>
